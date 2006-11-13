@@ -1,13 +1,11 @@
 #
 #  simple analyzer to make histos within a framework job off the super clusters in the event
 #  Author: Shahram Rahatlou, University of Rome & INFN
-#  $Id: egammaSimpleAnalyzer.cfi,v 1.7 2006/08/02 13:41:52 rahatlou Exp $
+#  $Id: egammaBCAnalyzer.cfi,v 1.1 2006/11/08 16:04:00 mabalazs Exp $
 #
-module egammaBasicClusterAnalyzer = EgammaBasicClusters {
-
-  untracked string outputFile = "egammaBCAnalyzer.root"
-
-	untracked bool verboseDBE = true
+module egammaBasicClusterAnalyzer = EgammaBasicClusters 
+{
+	using VerificationCommonParameters
 
   double hist_min_Size = 0
   double hist_max_Size = 20

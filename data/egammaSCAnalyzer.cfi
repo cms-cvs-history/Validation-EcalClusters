@@ -1,0 +1,41 @@
+#
+#  simple analyzer to make histos within a framework job off the super clusters in the event
+#  Author: Shahram Rahatlou, University of Rome & INFN
+#  $Id: egammaBCAnalyzer.cfi,v 1.1 2006/11/08 16:04:00 mabalazs Exp $
+#
+module egammaSuperClusterAnalyzer = EgammaSuperClusters
+{
+	using VerificationCommonParameters	
+
+  double hist_min_Size = 0
+  double hist_max_Size = 5
+  int32  hist_bins_Size = 5
+
+  double hist_min_NumBC = 0
+  double hist_max_NumBC = 10
+  int32  hist_bins_NumBC = 10
+
+  double hist_min_ET = 0
+  double hist_max_ET = 500
+  int32  hist_bins_ET = 250
+
+  double hist_min_Eta = -2.5
+  double hist_max_Eta = 2.5
+  int32  hist_bins_Eta = 91
+
+  double hist_min_Phi = -3.14159
+  double hist_max_Phi = 3.14159
+  int32  hist_bins_Phi = 181
+
+  double hist_min_S1toS9 = -2
+  double hist_max_S1toS9 =  2
+  int32  hist_bins_S1toS9 = 20
+
+  double hist_min_S25toE = -2
+  double hist_max_S25toE =  2
+  int32  hist_bins_S25toE = 20
+
+	InputTag hybridBarrelSuperClusterCollection = hybridSuperClusters:hybridBarrelSuperClusters
+  InputTag islandBarrelSuperClusterCollection = islandSuperClusters:islandBarrelSuperClusters
+  InputTag islandEndcapSuperClusterCollection = islandSuperClusters:islandEndcapSuperClusters
+}
