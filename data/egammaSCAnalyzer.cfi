@@ -1,7 +1,6 @@
 #
-#  simple analyzer to make histos within a framework job off the super clusters in the event
-#  Author: Shahram Rahatlou, University of Rome & INFN
-#  $Id: egammaBCAnalyzer.cfi,v 1.1 2006/11/08 16:04:00 mabalazs Exp $
+#  Author: Michael A. Balazs, University of Virginia
+#  $Id: egammaSCAnalyzer.cfi,v 1.0 2006/11/13 15:23:02 mabalazs Exp $
 #
 module egammaSuperClusterAnalyzer = EgammaSuperClusters
 {
