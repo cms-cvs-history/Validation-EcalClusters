@@ -1,6 +1,6 @@
 #
 #  Author: Michael A. Balazs, University of Virginia
-#  $Id: egammaSCAnalyzer.cfi,v 1.4 2006/11/15 18:50:02 mabalazs Exp $
+#  $Id: egammaSCAnalyzer.cfi,v 1.5 2006/11/16 17:45:51 mabalazs Exp $
 #
 module egammaSuperClusterAnalyzer = EgammaSuperClusters
 {
@@ -15,8 +15,8 @@ module egammaSuperClusterAnalyzer = EgammaSuperClusters
   int32  hist_bins_NumBC = 10
 
   double hist_min_ET = 0
-  double hist_max_ET = 500
-  int32  hist_bins_ET = 250
+  double hist_max_ET = 50
+  int32  hist_bins_ET = 50
 
   double hist_min_Eta = -2.5
   double hist_max_Eta = 2.5
@@ -38,8 +38,8 @@ module egammaSuperClusterAnalyzer = EgammaSuperClusters
   double hist_max_EToverTruth = 1.5
   int32  hist_bins_EToverTruth = 100
 
-  double hist_min_deltaEta = -.25
-  double hist_max_deltaEta =  .25
+  double hist_min_deltaEta = -.025
+  double hist_max_deltaEta =  .025
   int32  hist_bins_deltaEta = 51
 
   InputTag hybridBarrelSuperClusterCollection = correctedHybridSuperClusters
