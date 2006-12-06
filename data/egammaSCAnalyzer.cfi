@@ -1,6 +1,6 @@
 #
 #  Author: Michael A. Balazs, University of Virginia
-#  $Id: egammaSCAnalyzer.cfi,v 1.5 2006/11/16 17:45:51 mabalazs Exp $
+#  $Id: egammaSCAnalyzer.cfi,v 1.6 2006/11/20 18:58:29 mabalazs Exp $
 #
 module egammaSuperClusterAnalyzer = EgammaSuperClusters
 {
@@ -26,13 +26,13 @@ module egammaSuperClusterAnalyzer = EgammaSuperClusters
   double hist_max_Phi = 3.14159
   int32  hist_bins_Phi = 181
 
-  double hist_min_S1toS9 = -2
-  double hist_max_S1toS9 =  2
-  int32  hist_bins_S1toS9 = 20
+  double hist_min_S1toS9 = 0
+  double hist_max_S1toS9 =  1.
+  int32  hist_bins_S1toS9 = 50
 
-  double hist_min_S25toE = -2
-  double hist_max_S25toE =  2
-  int32  hist_bins_S25toE = 20
+  double hist_min_S25toE = 0
+  double hist_max_S25toE =  1
+  int32  hist_bins_S25toE = 50
 
   double hist_min_EToverTruth = .5
   double hist_max_EToverTruth = 1.5
@@ -45,4 +45,8 @@ module egammaSuperClusterAnalyzer = EgammaSuperClusters
   InputTag hybridBarrelSuperClusterCollection = correctedHybridSuperClusters
   InputTag islandBarrelSuperClusterCollection = correctedIslandBarrelSuperClusters
   InputTag islandEndcapSuperClusterCollection = correctedIslandEndcapSuperClusters
+
+  InputTag hybridBarrelClusterShapeAssociation = hybridSuperClusters:hybridShapeAssoc
+  InputTag islandBarrelClusterShapeAssociation = islandBasicClusters:islandBarrelShapeAssoc
+  InputTag islandEndcapClusterShapeAssociation = islandBasicClusters:islandEndcapShapeAssoc
 }
