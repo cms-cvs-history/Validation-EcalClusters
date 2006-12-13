@@ -1,10 +1,10 @@
 #
 #  Author: Michael A. Balazs, University of Virginia
-#  $Id: egammaSCAnalyzer.cfi,v 1.6 2006/11/20 18:58:29 mabalazs Exp $
+#  $Id: egammaSCAnalyzer.cfi,v 1.7 2006/12/06 16:39:15 mabalazs Exp $
 #
 module egammaSuperClusterAnalyzer = EgammaSuperClusters
 {
-	using VerificationCommonParameters	
+  using VerificationCommonParameters	
 
   double hist_min_Size = 0
   double hist_max_Size = 5
@@ -44,7 +44,7 @@ module egammaSuperClusterAnalyzer = EgammaSuperClusters
 
   InputTag hybridBarrelSuperClusterCollection = correctedHybridSuperClusters
   InputTag islandBarrelSuperClusterCollection = correctedIslandBarrelSuperClusters
-  InputTag islandEndcapSuperClusterCollection = correctedIslandEndcapSuperClusters
+  InputTag islandEndcapSuperClusterCollection = correctedEndcapSuperClustersWithPreshower
 
   InputTag hybridBarrelClusterShapeAssociation = hybridSuperClusters:hybridShapeAssoc
   InputTag islandBarrelClusterShapeAssociation = islandBasicClusters:islandBarrelShapeAssoc

@@ -1,10 +1,10 @@
 #
 #  Author: Michael A. Balazs, University of Virginia
-#  $Id: egammaBCAnalyzer.cfi,v 1.3 2006/11/13 19:29:43 mabalazs Exp $
+#  $Id: egammaBCAnalyzer.cfi,v 1.4 2006/11/16 17:45:51 mabalazs Exp $
 #
 module egammaBasicClusterAnalyzer = EgammaBasicClusters 
 {
-	using VerificationCommonParameters
+  using VerificationCommonParameters
 
   double hist_min_Size = 0
   double hist_max_Size = 20
@@ -26,7 +26,7 @@ module egammaBasicClusterAnalyzer = EgammaBasicClusters
   double hist_max_Phi = 3.14159
   int32  hist_bins_Phi = 181
 
-	InputTag hybridBarrelBasicClusterCollection = hybridSuperClusters
+  InputTag hybridBarrelBasicClusterCollection = hybridSuperClusters
   InputTag islandBarrelBasicClusterCollection = islandBasicClusters:islandBarrelBasicClusters
   InputTag islandEndcapBasicClusterCollection = islandBasicClusters:islandEndcapBasicClusters
 }
