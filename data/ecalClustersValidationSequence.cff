@@ -14,3 +14,4 @@
   # analyzer to make histos from super clusters
   include "Validation/EcalClusters/data/egammaSCAnalyzer.cfi"
 
+  sequence ecalClustersValidationSequence = { egammaBasicClusterAnalyzer & egammaSuperClusterAnalyzer } 
