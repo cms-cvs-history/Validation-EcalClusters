@@ -1,13 +1,3 @@
-  block VerificationCommonParameters =
-  {
-    untracked string outputFile = "EcalClustersValidation.root"
-    untracked string CMSSW_Version = "V2_0_0_pre6"
-
-    untracked bool verboseDBE = true
-
-    InputTag MCTruthCollection = source
-  }
-
   # analyzer to make histos from basic clusters
   include "Validation/EcalClusters/data/egammaBCAnalyzer.cfi"
 
