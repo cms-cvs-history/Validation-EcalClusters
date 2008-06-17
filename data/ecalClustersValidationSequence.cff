@@ -1,3 +1,5 @@
+  #include "RecoEcal/EgammaClusterProducers/data/geometryForClustering.cff"
+
   # analyzer to make histos from basic clusters
   include "Validation/EcalClusters/data/egammaBCAnalyzer.cfi"
 
