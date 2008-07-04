@@ -1,9 +1,0 @@
-  #include "RecoEcal/EgammaClusterProducers/data/geometryForClustering.cff"
-
-  # analyzer to make histos from basic clusters
-  include "Validation/EcalClusters/data/egammaBCAnalyzer.cfi"
-
-  # analyzer to make histos from super clusters
-  include "Validation/EcalClusters/data/egammaSCAnalyzer.cfi"
-
-  sequence ecalClustersValidationSequence = { egammaBasicClusterAnalyzer & egammaSuperClusterAnalyzer } 
