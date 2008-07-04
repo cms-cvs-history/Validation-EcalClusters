@@ -1,9 +1,0 @@
-  block VerificationCommonParameters =
-  {
-    untracked string outputFile = "EcalClustersValidation.root"
-    untracked string CMSSW_Version = "V2_0_0_pre6"
-
-    untracked bool verboseDBE = true
-
-    InputTag MCTruthCollection = source
-  }
